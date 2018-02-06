@@ -2,11 +2,11 @@
 ## Generate example design 
 1. Intel Stratix-10 可以在Quartus中生成两种PCI Express的Example Design. 它们分别使用了Avalon-ST和Avalon-MM两种不同类型的接口,两者的比较如下：
 
-| 接口类型 | Avalon-ST | Avalon-MM |
-| 一个普通标题 | 一个普通标题 | 一个普通标题 |
-| ------| ------ | ------ |
-| 短文本 | 中等文本 | 稍微长一点的文本 |
-| 稍微长一点的文本 | 短文本 | 中等文本 |
+  | 接口类型 | Avalon-ST | Avalon-MM |
+  | ------| ------ | ------ |
+  | 数据流方向 | 单向 | 双向 |
+  | 是否主从模式 | 否 | 是 |
+  | 适合传输格式 | 数据流 | 逻辑指令 |
 
 2. 以Avalon-ST为例，下面示范如何创建工程文件并生成sof烧写文件(ES1样片仅支持PCIe Gen3 x8 模式)。
 按照官方给出的参考文档，[ug-dex-s10-pcie-avst.pdf](https://www.altera.com/en_US/pdfs/literature/ug/ug_a10_pcie_avst.pdf)
