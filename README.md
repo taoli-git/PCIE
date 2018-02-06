@@ -8,7 +8,7 @@
   | 是否主从模式 | 否 | 是 |
   | 适合传输格式 | 数据流 | 逻辑指令 |
   
-  关于两者详细的参数和细节可以参考文档[官方文档](https://www.altera.com/en_US/pdfs/literature/manual/mnl_avalon_spec.pdf)以及这份[中文文档](http://www.innovateasia.com/asia/download/document/knowledge_11_China.pdf)
+  总结一下就是，Avalon-MM适用于一些主从模式的模块，是通过地址来读写数据，更多的是用在控制逻辑上面，传输速度较慢；Avalon-ST更多的适用于一些传递速度要求比较高，没有地址需求的应用方面，ST接口尤其适用于点到点的流数据接口。这两个接口本身并没有矛盾，不是说势不两立的，一个模块中既可以有MM接口，甚至几个MM接口，也可以同时存在ST接口。关于两者详细的参数和细节可以参考文档[官方文档](https://www.altera.com/en_US/pdfs/literature/manual/mnl_avalon_spec.pdf)以及这份[中文文档](http://www.innovateasia.com/asia/download/document/knowledge_11_China.pdf)
 
 2. 以Avalon-ST为例，下面示范如何创建工程文件并生成sof烧写文件(ES1样片仅支持PCIe Gen3 x8 模式)。
 按照官方给出的参考文档，[ug-dex-s10-pcie-avst.pdf](https://www.altera.com/en_US/pdfs/literature/ug/ug_a10_pcie_avst.pdf)
