@@ -7,7 +7,10 @@
   | 数据流方向 | 单向 | 双向 |
   | 是否主从模式 | 否 | 是 |
   | 适合传输格式 | 数据流 | 逻辑指令 |
+  
   
+  关于两者详细的参数和细节可以参考文档[官方文档](https://www.altera.com/en_US/pdfs/literature/manual/mnl_avalon_spec.pdf)以及这份[中文文档](www.innovateasia.com/asia/download/.../knowledge_11_China.pdf)
+
 2. 以Avalon-ST为例，下面示范如何创建工程文件并生成sof烧写文件(ES1样片仅支持PCIe Gen3 x8 模式)。
 按照官方给出的参考文档，[ug-dex-s10-pcie-avst.pdf](https://www.altera.com/en_US/pdfs/literature/ug/ug_a10_pcie_avst.pdf)
 1.3 Generating the Design Example 中描述的步骤操作一遍，然后点击Assignment选择Pin planner,按照硬件手册进行管脚约束后，再次点击编译按钮(Compile Design)可以生成Avalon-ST接口PCIE的一个Example Design。生成之后点击编译，生成sof烧写文件。
