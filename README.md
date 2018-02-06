@@ -7,7 +7,6 @@
   | 数据流方向 | 单向 | 双向 |
   | 是否主从模式 | 否 | 是 |
   | 适合传输格式 | 数据流 | 逻辑指令 |
-  
   
   关于两者详细的参数和细节可以参考文档[官方文档](https://www.altera.com/en_US/pdfs/literature/manual/mnl_avalon_spec.pdf)以及这份[中文文档](www.innovateasia.com/asia/download/.../knowledge_11_China.pdf)
 
